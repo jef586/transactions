@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_payment: MyString
+  currency: 1
+  ammount: 1
+  total_discount: 1
+  total_amount: 1
+  id_discount: MyString
+  type_discount: 1
+
+two:
+  id_payment: MyString
+  currency: 1
+  ammount: 1
+  total_discount: 1
+  total_amount: 1
+  id_discount: MyString
+  type_discount: 1
