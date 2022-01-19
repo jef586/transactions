@@ -3,6 +3,7 @@
 class CreatePayments < ActiveRecord::Migration[6.1]
   def change
     create_table :payments do |t|
+      t.belongs_to :clients
       t.string :id_payment
       t.integer :currency
       t.integer :ammount

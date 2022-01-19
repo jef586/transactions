@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 class Transaction < ApplicationRecord
-    belong to :clients
-    belong to :transactions
+    belongs_to :clients
+    belongs_to :transactions
 end

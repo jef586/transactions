@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 class Payment < ApplicationRecord
-    has many :transactions
-    belong to :clients
+    has_many :transactions
+    belongs_to :clients
 end
