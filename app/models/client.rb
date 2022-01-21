@@ -5,11 +5,11 @@ class Client < ApplicationRecord
   has_many :transactions
 
   validates :email
-            :first_name
-            :last_name
-            :job
-            :country
-            :address
-            :zip_code
-            :phone
+  :first_name
+  :last_name
+  :job
+  :country
+  :address
+  :zip_code
+  :phone
 end
