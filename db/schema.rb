@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_220_119_204_004) do
+ActiveRecord::Schema.define(version: 20_220_122_104_244) do
   create_table 'clients', force: :cascade do |t|
     t.string 'id_client'
     t.string 'email'
@@ -51,5 +51,13 @@ ActiveRecord::Schema.define(version: 20_220_119_204_004) do
     t.datetime 'updated_at', precision: 6, null: false
     t.index ['client_id'], name: 'index_transactions_on_client_id'
     t.index ['payment_id'], name: 'index_transactions_on_payment_id'
+  end
+
+  create_table 'users', force: :cascade do |t|
+    t.string 'first_name'
+    t.string 'last_name'
+    t.string 'email'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
 end
