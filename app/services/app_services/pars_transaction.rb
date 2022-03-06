@@ -51,6 +51,7 @@ module AppServices
           }
           Discount.create(discount_args)
         end
+      end
     end
   end
 end
