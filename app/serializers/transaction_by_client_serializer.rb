@@ -7,4 +7,3 @@ class TransactionsByClientSerializer < ApplicationSerializer
              :external_id,
              :transactions
 end
-    

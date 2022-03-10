@@ -6,6 +6,8 @@ class ClientsController < ApplicationController
     render json: @clients, each_serializer: ClientSerializer, status: :ok
   end
 
+  def show; end
+
   def client_balance
     @client = Client.find(params[:id])
     @balance = Hash[total_recieved: 0, total_receivable: 0, total_declined: 0]
